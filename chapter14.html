@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        
+    <title> Unit 14 Project </title>
+    
+    <meta charset="utf-8">
+    
+        <script>
+            function validateForm() { 
+            if (document.forms["chap14Form"].userName.value == "")
+                {
+                alert("Name field cannot be left blank");
+                return false;
+                }
+             if (document.forms["chap14Form"].userEmail.value == "")
+                {
+                alert("E-mail field cannot be left blank");
+                return false;
+                }
+               alert ("Thank you for submitting information")
+               return true;
+            }
+        </script>
+               
+        
+    </head>
+    
+    <body>
+        
+        <h1><b> Chapter 14 JavaScript Form </b></h1>
+    
+    <form name="chap14Form" action="http://www.markmurtha.com/csis128/readform.asp" onsubmit="return validateForm()"  method="post" >
+        
+        <lable for="userName">Name: </lable>
+        <input type="text" name="userName" id="userName">
+        
+        <br><br>
+        
+        <lable for="userEmail">E-Mail Address: </lable> 
+        <input type="text" name="userEmail" id="userEmail">
+        
+        <br><br>
+        
+        <input type="submit" value="Sign Up Now">
+        
+    </form>
+    
+    
+    </body></html>
